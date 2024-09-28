@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <caption><span >Formulaire</span></caption>
+    <form action="">
+        <label for="Filier">filière</label>  
+        <select  class="fil">
+            <option value="">Ts-devevelopement digital</option>
+            <option value="">Ts-gestion d'entreprise</option>
+            <option>Ts-infrastructure digital</option>
+        </select>
+        <label id="test">Module</label>
+        <select name="" class="fil">
+            <option value="">M101:metier et formation</option>
+            <option value="">M102:develloper des site web statique</option>
+            <option>M103:site web dinamiques</option>
+        </select> <br><br>
+        <label for="">Nouvelles seances</label>
+        <br>
+        <hr>
+        <table >
+            <tr><td>elements de la competance <br> (objectif)<sup>*</sup><br>300 caractaire</td><td> <textarea name="" id="" rows="4"></textarea></td> <td>Type de cours</td><td>
+                <select class="fil" >
+                <option value="">choisissez</option>
+                <option>adistance</option>
+                <option>presentiel</option>
+            </select></td></tr>
+            <tr><td colspan="4"><hr></td></tr>
+            <tr><td>Date de seance</td> <td> <select >
+                <option>lundi 23-9-2024</option>
+            </select></td> <td><label for="">eff Abscent</label> </td><td>
+                <select >
+                <option value="">0 stagiere</option>
+                <option value="">1 stagiere</option>
+                <option value="">2 stagiere</option>
+            </select></td></tr>
+            <tr><td><label for="">Heure de demarage</label></td> <td>
+                <select  >
+                <option value="" type="date">8:00</option>
+                <option value="" type="date">8:30</option>
+                <option value="" type="date">9:00</option>
+                <option value="" type="date">9:30</option>
+                <option value="" type="date">10:00</option>
+                </select>
+                </td> <td><label for="">Heure fin</label></td><td>
+                <select   >
+                <option value="" type="date">8:00</option>
+                <option value="" type="date">8:30</option>
+                <option value="" type="date">9:00</option>
+                <option value="" type="date">9:30</option>
+                <option value="" type="date">10:00</option>
+                </select></td></tr>
+                <tr><td colspan="4"><hr></td></tr>
+                <tr><td><label for="">Commantaire</label></td> <td><textarea rows="4" cols="21"></textarea></td> <td>Listes Absents</td><td><textarea rows="4" cols="21"></textarea></td></tr>
+                <tr><td> <label for="">Type de seance:</label></td>
+                <td><input type="radio" name="seance">cours
+                <input type="radio" name="seance">cc
+                <input type="radio" name="seance">eff </td>
+                
+                </tr>
+                <tr><td><button type="submit" >Valider la seance</button></td></tr>
+            </table>
+
+
+
+      
+    </form>
+</body>
+</html>

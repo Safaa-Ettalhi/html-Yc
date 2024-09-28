@@ -1,0 +1,20 @@
+select{
+    width: 80%;
+}
+table{
+    width: 100%;
+}
+button{
+    background-color: rgb(73, 196, 73);
+}
+.fil {
+    width: 20%;
+}
+span{
+    color: red;
+    font-weight: bold; /* equibalqnt de b in html*/
+    margin-left: 35%;
+}
+form{
+    padding-top: 1%;
+}
