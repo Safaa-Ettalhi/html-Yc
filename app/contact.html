@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - LocationVoiture</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+ /* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Permet de garder le footer en bas */
+}
+
+/* En-tête */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Aligne le logo et la navigation */
+    align-items: center; /* Centre verticalement */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espace entre les éléments */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s; /* Transition pour l'effet de survol */
+}
+
+nav ul li a:hover {
+    background: #555; /* Changement de fond au survol */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Section principale */
+section {
+    flex: 1; /* Prend l'espace restant */
+    display: flex;
+    justify-content: center; /* Centre le contenu */
+    align-items: flex-start; /* Aligne en haut */
+    padding: 20px;
+}
+
+/* Grille */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes */
+    gap: 20px; /* Espace entre les cartes */
+    max-width: 800px; /* Largeur maximale */
+    width: 100%; /* S'adapte à la largeur de l'écran */
+}
+
+/* Cartes */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Titres */
+h2 {
+    color: #333;
+    margin-bottom: 20px; /* Espace sous le titre */
+}
+
+/* Formulaire */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 10px; /* Espace intérieur des champs */
+    margin: 10px 0; /* Espace vertical entre les champs */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+}
+
+textarea {
+    height: 100px; /* Hauteur pour la zone de texte */
+}
+
+/* Bouton d'envoi */
+button {
+    width: 100%;
+    padding: 10px; /* Espace intérieur du bouton */
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Taille de la police */
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+button:hover {
+    background-color: #4cae4c; /* Changement de couleur au survol */
+}
+p{
+    margin-bottom: 30px; 
+}
+.liste{
+    margin: 50px;
+    margin-left: 50px;
+    color: #555;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Réglages pour les petits écrans */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Une seule colonne sur petits écrans */
+    }
+}
+
+</style>
+<body>
+  <header>
+    <div class="logo">LocationVoiture</div>
+    <nav>
+      <ul>
+        <li><a href="page1.html">Accueil</a></li>
+        <li><a href="voiture.html">Voitures</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="connexion.html" class="btn-login">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="grid-container">
+        <div class="card">
+    <h2>Nous contacter</h2>
+    <p>Pour toute question, n'hésitez pas à nous contacter :</p>
+    <ul class="liste">
+      <li>Téléphone : +212611223345</li>
+      <li>Email : contact@locationvoiture.ma</li>
+      <li>Adresse : 12 Rue hassan 2, Safi, Maroc</li>
+    </ul>
+</div>
+<div class="card">
+    <form action="#" method="POST">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+</div>
+</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 LocationVoiture. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
