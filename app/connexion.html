@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connexion - LocationVoiture</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>/* Reset des marges et des paddings par défaut */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* Assurez-vous que le corps occupe toute la hauteur */
+    }
+    
+    /* Style général du corps */
+    body {
+        font-family: Arial, sans-serif; /* Police de caractères */
+        display: flex; /* Utiliser Flexbox */
+        flex-direction: column; /* Direction verticale */
+        justify-content: space-between; /* Espacement entre les sections */
+    }
+    
+    /* Style de la section */
+    section {
+      
+        display: flex; /* Utiliser Flexbox pour centrer le contenu */
+        flex-direction: column; /* Direction verticale */
+        justify-content: center; /* Centrer verticalement */
+        align-items: center; /* Centrer horizontalement */
+        flex: 1; /* Permet à la section de prendre l'espace disponible */
+    }
+    
+    /* Style du formulaire */
+    form {
+        
+        display: flex; /* Utiliser Flexbox pour le formulaire */
+        flex-direction: column; /* Direction verticale pour les champs */
+        align-items: center; /* Centrer horizontalement les éléments du formulaire */
+        width: 300px; /* Largeur fixe pour le formulaire */
+    }
+    
+    /* Style des éléments de formulaire */
+    label {
+        margin: 10px 0 5px; /* Marges pour les labels */
+    }
+    
+    input {
+        margin-bottom: 15px; /* Espacement entre les champs */
+        padding: 10px; /* Espacement interne */
+        width: 100%; /* Largeur complète */
+        box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+    }
+    
+    /* Style du bouton */
+    button {
+        padding: 10px 20px; /* Espacement interne pour le bouton */
+        background-color: #007BFF; /* Couleur de fond */
+        color: white; /* Couleur du texte */
+        border: none; /* Pas de bordure */
+        cursor: pointer; /* Changer le curseur au survol */
+    }
+    
+    /* Style du footer */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center; /* Centrer le texte du footer */
+        padding: 20px; /* Espacement interne */
+       
+    }
+    </style>
+<body>
+  <header>
+    <div class="logo">LocationVoiture</div>
+    <nav>
+      <ul>
+        <li><a href="page1.html">Accueil</a></li>
+        <li><a href="voiture.html">Voitures</a></li>
+        <li><a href="tarif.html">Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="connexion.html" class="btn-login">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Connexion</h2>
+    <form >
+      <label for="username">Nom d'utilisateur :</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Se connecter</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 LocationVoiture. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
