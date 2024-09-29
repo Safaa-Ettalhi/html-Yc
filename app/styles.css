@@ -244,4 +244,45 @@
     bottom: 0;
     width: 100%;
   }
+  .tarif-section {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .tarif-section p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .tarif-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    text-align: left;
+  }
+  
+  .tarif-table th, .tarif-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  .tarif-table th {
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .tarif-table td {
+    background-color: #fafafa;
+  }
+  
+  .tarif-table tr:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  .tarif-table td {
+    transition: background-color 0.3s ease;
+  }
   
