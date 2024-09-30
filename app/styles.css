@@ -11,6 +11,8 @@
     color: #333;
   }
   
+  /* Navbar */
+  
   header {
     display: flex;
     justify-content: space-between;
@@ -43,6 +45,7 @@
     border-radius: 5px;
   }
   
+    /* Video */
   #myVideo {
     position: absolute;
     right: 0;
