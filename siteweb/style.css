@@ -327,6 +327,13 @@ iframe {
     #menu li a {
         color: white; /* Liens en blanc */
     }
+    .hero {
+        font-size: 2.5rem;
+      }
+      .form,
+  .map {
+    flex: 1;
+  }
     /*section2 */
     .section2 {
         flex-direction: row; /* Change la direction en ligne */
