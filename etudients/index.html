@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LT-School</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo"><a href="">LT-School</a></h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <ul id="menu">
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Qui nous sommes</a></li>
+          <li><a href="">Nos Services</a></li>
+          <li><a href="">Nous Contacter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="content">
+          <div class="contenu1">
+            <h1>Le site LT-School à votre Service</h1>
+            <p>
+              Bienvenue sur le site officiel de l'Établissement XYZ. Nous nous
+              engageons à offrir une éducation de qualité et un environnement
+              d'apprentissage stimulant pour nos élèves.
+            </p>
+            <button type="button" class="btn1">Consulter</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <h2 class="section-title">Notre histoire</h2>
+        <div class="container">
+          <div class="histoire">
+            <p class="notre-histoire">
+              Notre histoire remonte à plusieurs décennies, lorsque
+              l'Établissement XYZ a été fondé avec la mission de promouvoir une
+              éducation de qualité. Depuis, nous avons formé des générations
+              d'élèves en les préparant pour un avenir prospère. Nous nous
+              engageons à maintenir cette tradition d'excellence dans
+              l'enseignement.
+            </p>
+            <button type="button" class="btn1">Plus</button>
+          </div>
+          <div class="image">
+            <img src="img/nous.jpg" alt="Notre équipe" />
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2 class="section-title">Nos Services</h2>
+        <div class="services-container">
+          <div class="service">
+            <h3>Développement Web</h3>
+            <p>
+              Notre service de développement web se concentre sur la création de
+              sites internet dynamiques et interactifs. Nos étudiants apprennent
+              à maîtriser des technologies modernes telles que HTML, CSS,
+              JavaScript, et des frameworks comme React et Angular.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Développement Mobile</h3>
+            <p>
+              Dans notre service de développement mobile, nous formons des
+              étudiants à la conception et à la création d'applications pour
+              smartphones et tablettes. Grâce à l'utilisation des technologies
+              comme Flutter, React Native et Swift, nos apprenants acquièrent
+              les compétences nécessaires pour développer des applications
+              fluides et fonctionnelles sur plusieurs plateformes.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Développement Desktop</h3>
+            <p>
+              Notre service de développement desktop offre une formation
+              complète sur la création d'applications de bureau pour Windows,
+              macOS et Linux. Les étudiants apprennent à utiliser des langages
+              de programmation tels que Java, C# et Python pour développer des
+              logiciels robustes et performants.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="section-title">Nous Contacter</h2>
+        <div class="contact-container">
+          <div class="form">
+            <form class="formulaire">
+              <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="formbtn">Envoyer</button>
+              </div>
+            </form>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.7326592335344!2d-9.232752199999972!3d32.29216489999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac20d50abd9ebf%3A0x1adf5e1a67ef5d28!2s%C3%89cole%20du%20Plateau%20Bensouda!5e0!3m2!1sfr!2sma!4v1728322096077!5m2!1sfr!2sma"
+              width="100%"
+              height="100%"
+              style="border: 10px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>IT-School &copy; 2024 . Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
