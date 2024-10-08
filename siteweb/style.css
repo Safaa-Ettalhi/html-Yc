@@ -1,0 +1,413 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* 16 px = 16px par défaut */
+}
+.logo{
+    padding-top: 1%;
+    float: left;
+    color: white;
+    font-size:1.875rem ;  
+}
+/* Style de base pour la barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5b45ee;
+    padding: 1rem;
+    position: relative;
+}
+
+nav h1.logo a {
+    text-decoration: none;
+    padding-top: 1%;
+    float: left;
+    color: white;
+    font-size:1.875rem ;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+   
+}
+
+#menu li {
+    margin-left: 1rem;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+/* Masquer le checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Style du bouton hamburger */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;  /* Position absolue pour placer le bouton */
+    right: 1rem;         /* Aligné complètement à droite */
+    top: 1rem;           /* Ajustez la hauteur si nécessaire */
+   
+}
+.content{
+    background-image: url('img/strategies-d-enseignement-pour-maintenir-le-travail-des-eleves-en-difficulte.jpg');
+    background-size: cover; 
+    background-attachment: fixed;/* fixer limage */
+    text-align: center;
+    color: white;
+    height: 37.5rem; /* 600px */
+    
+   
+}
+.contenu1{
+    padding: 9.375rem; /* 150px */
+}
+.contenu1 h1 {
+    font-size: 3.125rem; /* 50px */
+    margin-bottom: 1.875rem; /* 30px */
+    
+}
+.contenu1 p{
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.container {
+    display: flex;                /* Utilisation de Flexbox pour organiser le contenu en ligne */
+    justify-content: space-between;/* Mettre de l'espace entre le texte et l'image */
+    flex-wrap: wrap; /*les éléments se réarrangent sur petits écrans */
+}
+.T2{
+    color:blue;
+    text-align: center;
+    font-size: 1.875rem; /* 30px */
+    margin: 1.25rem; /* 20px */
+}
+.section2 {
+    display: flex; /* Utiliser flexbox pour disposer le contenu */
+    flex-direction: column; /* Par défaut, sur les petits écrans, empiler le contenu */
+   
+}
+.histoire{
+    flex: 1;/* Permet à l'historie d'occuper l'espace disponible */
+   padding-left: 2%;
+   background-color: #969696;
+   
+}
+
+.notre-histoire {
+   
+    font-size: 1.625rem; /* 26px */
+    line-height: 2;/*hauteur de ligne */
+             
+}
+.image {
+  
+    /*flex: 1;  L'image occupe également l'espace disponible */
+    display: flex; /* Pour centrer l'image */
+    justify-content: center; /* Centrer horizontalement */
+    object-fit: cover;
+}
+.image img {
+    width: auto; /* S'assure que l'image prend toute la largeur disponible */
+    max-width: 31.25rem; /* 500px *//* Limite la taille maximale de l'image */
+    height: 100%;      /* S'assure que l'image couvre complètement le conteneur sans déformer l'aspect */          
+}
+
+.services-container{
+    display: flex;
+    
+    
+}
+.service {
+    padding: 1.25rem; /* 20px */
+    border: 0.0625rem solid #ccc; /* 1px */
+    border-radius: 0.3125rem; /* 5px */
+    background-color: #969696;
+}
+h2{
+    margin-bottom: 0.625rem; /* 10px */
+    text-align: center;
+}
+.service:hover{
+    background-color: #ccc;
+}
+.formulaire {
+    max-width: 25rem; /* Largeur maximale du formulaire */
+    margin: left; /* Centre le formulaire dans la page */
+    padding: 1.25rem; /* Rembourrage à l'intérieur du formulaire */
+    background-color: #83acff; /* Couleur de fond pour le formulaire */
+    border-radius: 0.5rem; /* Coins arrondis pour le formulaire */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Ombre légère autour du formulaire */
+}
+.form-group {
+    display: flex; 
+    justify-content: space-between; /* Espace entre le label et l'input */
+    margin-bottom: 0.9375rem; /* 15px */ /* Espace entre les groupes de formulaire */
+}
+label {
+    flex: 0 0 30%; /* Fixe la largeur du label */
+    margin-right: 0.625rem; /* 10px */ /* Espace entre le label et l'input */
+}
+textarea,input{
+    flex: 1;
+    border: 0.0625rem solid #ccc; /* 1px */
+    border-radius: 0.25rem; /* 4px */
+    padding: 0.5rem; /* 8px */
+    
+}
+.formbtn{
+    padding: 0.625rem; /* 10px */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    cursor: pointer;
+}
+.formbtn:hover{
+    background-color: #0056b3;
+}
+.contact{
+    display:flex ;
+    /*flex-wrap: wrap;*/
+  
+}
+.form{
+    flex:1;
+    margin-left: 2%;
+   
+    width: 35%;
+}
+footer{
+    background-color: #5b45ee;
+    color: white;
+    height: 2.5rem; /* 40px */
+    text-align: center;
+    padding: 0.75rem; /* Ajustement du padding pour les petits écrans */
+    font-size: 1.25rem; /* x-large */
+    position: relative; /* Positionnement relatif pour éviter le débordement */
+}
+/* Media Query pour petits écrans */
+@media (max-width: 768px) {
+    /* Masquer le menu horizontal et le rendre vertical */
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: #5b45ee;
+        position: absolute;
+        top: 4rem; /* Aligner sous le header */
+       right: 0;
+        width: 50%; /* Ajustez selon votre besoin */
+        padding: 1rem;
+        text-align: left;
+        
+    }
+
+    #menu li {
+        margin: 1rem 0;
+    }
+
+    /* Afficher le bouton hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Lorsque le menu-toggle est coché, afficher le menu */
+    #menu-toggle:checked + .hamburger + #menu {
+        display: flex;
+        right: 0;
+    }
+    /*section 1 */
+    .content {
+        height: auto; /* Ajuster la hauteur automatiquement */
+        padding: 5rem; /* Réduire le padding */
+    }
+
+    .contenu1 {
+        padding: 3rem; /* Réduire le padding */
+    }
+
+    .contenu1 h1 {
+        font-size: 2.8rem; /* Réduire la taille du titre */
+        color: #ffffff;
+    }
+
+    .contenu1 p {
+        font-size: 1.1rem; /* Ajuster la taille de police du paragraphe */
+        color: #faf9f9;
+    }
+    /*section 2*/
+    .section2 {
+        flex-direction: row; /* Change la direction en ligne */
+        align-items: center; /* Aligne le contenu verticalement au centre */
+    }
+
+    .histoire {
+        padding: 5%; /* Augmenter le padding pour l'espace */
+        background-color: #969696; /* Conserver la couleur d'arrière-plan */
+    }
+
+    .notre-histoire {
+        font-size: 1.5rem; /* Réduction de la taille de la police pour le texte */
+        line-height: 1.8; /* Ajustement de la hauteur de ligne */
+    }
+
+    .image img {
+        width: 100%; /* L'image prend toute la largeur */
+        max-width: 100%; /* S'assurer que l'image ne dépasse pas le conteneur */
+        height: auto; /* Garder les proportions de l'image */
+    }
+    
+/*section 3*/
+.services-container {
+    flex-direction: column; /* Alignement en colonne pour petits écrans */
+    align-items: center; /* Centre les éléments */
+}
+
+.service {
+    width: 90%; /* Largeur des services à 90% de l'écran */
+    margin: 0.5rem 0; /* Ajoute un peu d'espace vertical entre les services */
+}
+ /*section 4*/
+ .form {
+    width: 100%; /* Le formulaire prend toute la largeur sur les petits écrans */
+    margin-left: 0; /* Pas de marge à gauche */
+    margin-bottom: 1rem; /* Espace sous le formulaire */
+}
+
+.map {
+    width: 100%; /* La carte prend toute la largeur */
+    margin-top: 1rem; /* Espace au-dessus de la carte */
+}
+
+iframe {
+    width: 100%; /* La carte s'adapte à la largeur du conteneur */
+    height: 200px; /* Hauteur ajustée pour les petits écrans */
+}   
+    /*footer */
+    footer {
+        height: auto; /* Hauteur automatique pour permettre l'adaptation */
+        padding: 1rem; /* Augmenter le padding pour plus d'espace */
+        font-size: 1rem; /* Réduire la taille de la police */
+    }
+}
+/* Media Query pour moyennes écrans (768px à 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #menu {
+        display: flex; /* Afficher le menu en ligne */
+        position: relative; /* Position normale pour le menu */
+        background-color: transparent; /* Fond transparent */
+        right: 0; /* Aucun décalage */
+    }
+
+    /* Masquer le bouton hamburger */
+    .hamburger {
+        display: none; /* Cacher le bouton hamburger sur les écrans moyens */
+    }
+
+    #menu li {
+        margin-left: 1rem; /* Marge pour les éléments */
+    }
+
+    #menu li a {
+        color: white; /* Liens en blanc */
+    }
+    /*section2 */
+    .section2 {
+        flex-direction: row; /* Change la direction en ligne */
+        align-items: center; /* Aligne le contenu verticalement au centre */
+    }
+
+    .histoire {
+        padding: 5%; /* Augmenter le padding pour l'espace */
+        background-color: #969696; /* Conserver la couleur d'arrière-plan */
+    }
+
+    .notre-histoire {
+        font-size: 1.5rem; /* Réduction de la taille de la police pour le texte */
+        line-height: 1.8; /* Ajustement de la hauteur de ligne */
+    }
+
+    .image img {
+        width: 100%; /* L'image prend toute la largeur */
+        max-width: 100%; /* S'assurer que l'image ne dépasse pas le conteneur */
+        height: auto; /* Garder les proportions de l'image */
+    }
+   
+    .form {
+        width: 35%; /* Rétablit la largeur pour les écrans moyens à grands */
+    }
+
+    .map {
+        flex: 1; /* La carte prend l'espace restant */
+        margin-left: 2%; /* Marge à gauche pour espacer le formulaire et la carte */
+    }
+
+    iframe {
+        width: 100%; /* La carte s'adapte à la largeur du conteneur */
+        height: 250px; /* Hauteur pour les écrans moyens à grands */
+    }
+    /*footer */
+    footer {
+        height: 3rem; /* Ajustement de la hauteur pour les écrans plus grands */
+        padding: 1.25rem; /* Padding standard */
+        font-size: 1.25rem; /* Taille de police standard */
+    }
+}
+
+/* Media Query pour grands écrans */
+@media (min-width: 1025px) {
+    #menu {
+        display: flex; /* Afficher le menu en ligne */
+        position: relative; /* Position normale pour le menu */
+        background-color: transparent; /* Fond transparent */
+        right: 0; /* Aucun décalage */
+    }
+
+    /* Masquer le bouton hamburger */
+    .hamburger {
+        display: none; /* Cacher le bouton hamburger sur les écrans larges */
+    }
+
+    #menu li {
+        margin-left: 1rem; /* Marge pour les éléments */
+    }
+
+    #menu li a {
+        color: white; /* Liens en blanc */
+    }
+    .form {
+        width: 35%; /* Rétablit la largeur pour les écrans moyens à grands */
+    }
+
+    .map {
+        flex: 1; /* La carte prend l'espace restant */
+        margin-left: 2%; /* Marge à gauche pour espacer le formulaire et la carte */
+    }
+
+    iframe {
+        width: 100%; /* La carte s'adapte à la largeur du conteneur */
+        height: 250px; /* Hauteur pour les écrans moyens à grands */
+    }
+    /*footer */
+    footer {
+        height: 4rem; /* Ajustement de la hauteur pour les très grands écrans */
+        padding: 1.5rem; /* Augmenter le padding pour plus d'espace */
+        font-size: 1.5rem; /* Augmenter la taille de la police */
+    }
+}
